@@ -2,7 +2,7 @@ swagger: "2.0"
 info:
   version: "1.0"
   title: API VERSIONING EXAMPLE
-host: "localhost:10011"
+host: "localhost:10010"
 basePath: /api/v2
 schemes:
   - http
@@ -12,13 +12,13 @@ consumes:
 produces:
   - application/json
 paths:
-  /user:
-    x-swagger-router-controller: user
+  /roles:
+    x-swagger-router-controller: role
     get:
       tags:
-        - Users
-      description: Get one user.
-      operationId: getUser
+        - Roles
+      description: Get all application roles.
+      operationId: getAllRoles
       x-security-scopes:
         - admin
       consumes:
@@ -37,29 +37,32 @@ paths:
                 code: 200
                 message: Success
                 data:
-                  publicId: 8227b0c0-c059-4520-8537-1af221ed1201
-                  firstName: User
-                  lastName: User
-                  userName: user2501
-                  gender: M
-                  maritalStatus: M
-                  birthDate: 0000-00-00
-                  email: username1@gmail.com
-                  country: US
-                  city: FL
-                  province:
-                  address:
-                  zipCode:
-                  phoneNumber:
-                  countryCode:
-                  lastLogin:
-                  createdAt: '2018-12-11T02:14:20.179Z'
-                  updatedAt: '2018-12-11T02:14:20.179Z'
-                  role:
-                    publicId: 6a46de14-489a-4944-b57e-218ab5c44ac1
+                  - publicId: e56cf456-6b5a-4abc-9865-ae11e9980396
+                    roleName: admin
+                    createdAt: '2018-12-11T02:17:16.586Z'
+                    updatedAt: '2018-12-11T02:17:16.586Z'
+                    privileges:
+                      - publicId: 4177e280-cb80-4089-9461-0943a16b4414
+                        resourceName: "/home"
+                        show: true
+                        create: true
+                        update: false
+                        delete: true
+                        createdAt: '2018-12-11T02:17:16.602Z'
+                        updatedAt: '2018-12-11T02:17:16.602Z'
+                  - publicId: e4365560-c9d5-4663-817f-e9e2a250732c
                     roleName: client
-                    createdAt: '2018-12-11T02:02:17.620Z'
-                    updatedAt: '2018-12-11T02:02:17.620Z'
+                    createdAt: '2018-12-11T15:54:48.088Z'
+                    updatedAt: '2018-12-11T15:54:48.088Z'
+                    privileges:
+                      - publicId: b98726ab-78d3-4528-80a0-ddf952db382f
+                        resourceName: "/users"
+                        show: true
+                        create: true
+                        update: false
+                        delete: true
+                        createdAt: '2018-12-11T15:54:48.124Z'
+                        updatedAt: '2018-12-11T15:54:48.124Z'
         default:
           description: Error
           schema:
