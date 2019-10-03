@@ -16,7 +16,7 @@ import ApiVersioning from "./myCustomModules/ApiVersioning";
 const versioning = new ApiVersioning(__dirname);
 ```
 
-(4) Create a directory named swagger inside the folder that ExpressJS created for your application. The idea is to create a swagger.yaml file for each API version as in the following image:
+(4) Create a directory named swagger inside the folder that ExpressJS created for your application. The idea is to create a swagger.yaml file for each API version as the following image shows:
 
 ![Preview image](img/img-1.PNG)
 
