@@ -42,6 +42,8 @@ versioning.createAppVersion(app, swaggerFile2, '/api/v2', {
 ```
 
 # Screenshots
+[http://localhost:10010/api/v1/docs/](http://localhost:10010/api/v1/docs/)
 ![api v1 view](img/img-2.PNG)
 
+[http://localhost:10010/api/v2/docs/](http://localhost:10010/api/v2/docs/)
 ![api v2 view](img/img-3.PNG)
