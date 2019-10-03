@@ -18,7 +18,7 @@ const versioning = new ApiVersioning(__dirname);
 
 (4) Create a directory named swagger inside the folder that ExpressJS created for your application. The idea is to create a swagger.yaml file for each API version as the following image shows:
 
-![Preview image](img/img-1.PNG)
+![directory](img/img-1.PNG)
 
 (5) The initial or default configuration of the [swagger-express-mw](https://www.npmjs.com/package/swagger-express-mw) module can be found in this repository in the `config/default.yaml` file, feel free to adapt it to your needs. 
 
@@ -40,3 +40,8 @@ versioning.createAppVersion(app, swaggerFile2, '/api/v2', {
   apiDocs: '/swagger',
 });
 ```
+
+# Screenshots
+![api v1 view](img/img-2.PNG)
+
+![api v2 view](img/img-3.PNG)
