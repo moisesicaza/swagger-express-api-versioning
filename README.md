@@ -4,7 +4,7 @@ API versioning implementation with ExpressJS and Swagger using [swagger-express-
 # How to use?
 (1) First, copy the `ApiVersioning.js` file into a folder in your project directory, e.g. `myCustomModules/ApiVersioning.js`
 
-(2) Import the `ApiVersioning` module into the `index.js` file of your ExpressJS application.
+(2) Import the `ApiVersioning` module in the `index.js` file of your ExpressJS application.
 
 ```javascript
 import ApiVersioning from "./myCustomModules/ApiVersioning";
